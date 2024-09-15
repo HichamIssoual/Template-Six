@@ -23,15 +23,15 @@ a {
 }
 .dashboard {
     display: flex;
-    gap: 10px;
 }
 .dashboard .sidebar {
     min-height: 100vh;
     background-color: white;
     width: 200px;
-    box-shadow: 0 0 15px 2px #f3f3f3;
+    box-shadow: 0 0 5px 2px #ececec;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 1000000;
 }
 .dashboard .sidebar .logo {
     display: flex;
@@ -107,3 +107,109 @@ a {
         display: none;
     }
 }
+/* Start Head Of Dashboard */
+.content {
+    width: calc(100% - 210px );
+    background-color: #f1f5f9;
+}
+.content .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: white;
+}
+.mr-left-30 {
+    margin-left: 30px;
+}
+.content .head .input {
+    position: relative;
+}
+.content .head .input::before {
+    font: var(--fa-font-solid);
+    content: '\f002';
+    color: var(--grey-color);
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+.content .head .input input {
+    width: 210px;
+    padding: 10px 5px;
+    padding-left: 35px;
+    border-radius: 10px;
+    border: 1px solid var(--grey-color);
+    position: relative;
+    transition: 0.3s;
+}
+.content .head .input input:focus {
+    width: 250px;
+}
+.content .head .input input:focus::placeholder {
+    color: transparent;
+}
+.content .head .img-and-icon {
+    display: flex;
+    align-items: center;
+}
+.content .head .img-and-icon i {
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.content .head .img-and-icon i::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    top: -6px;
+    left: 11px;
+}
+.content .head .img-and-icon img {
+    cursor: pointer;
+    width: 40px;
+    margin-left: 20px;
+}
+@media (min-width:0px) and (max-width:767px) {
+    .content {
+        width: calc(100% - 70px );
+    }
+    .content .head .input input {
+        width: 160px;
+        font-size: 13px;
+    }
+    .content .head .input input:focus {
+        width: 180px;
+    }
+    .content .head .img-and-icon img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+/* End Head Of Dashboard */
+/* Start Titles */
+.content .title h1{
+    position: relative;
+}
+.content .title h1::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    bottom: -20px;
+    background-color: white;
+}
+.content .title h1::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    bottom: -20px;
+    background-color: black;
+    left: 0;
+}
+/* End Titles */
