@@ -439,4 +439,87 @@ a {
 .content .cards .card .body-card-four .tickets .ticket .icon-red {
     color: var(--red-color);
 }
+.content .cards .card .body-card-five {
+    padding: 0px 15px;
+}
+.content .cards .card .body-card-five .news {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.content .cards .card .body-card-five .news .text {
+    width: 50%;
+}
+.content .cards .card .body-card-five .news .text h4 {
+    margin: 5px 0px;
+}
+.content .cards .card .body-card-five .news .text span {
+    opacity: 0.7;
+}
+.content .cards .card .body-card-five .news .image img {
+    width: 120px;
+    border-radius: 10px;
+}
+.content .cards .card .body-card-five .news .days {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 120px - 10px - 50%);
+}
+.content .cards .card .body-card-five .news .days span {
+    padding: 2px 10px;
+    border-radius: 10px;
+    background-color: #eeeeeeee;
+}
+@media (min-width:0px) and (max-width:615px) {
+    .content .cards .card .body-card-four .tickets .ticket {
+        width: calc(100% - 45px);
+    }
+    .content .cards .card .body-card-five .news {
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px solid #eeeeeeee;
+        padding: 10px;
+    }
+    .content .cards .card .body-card-five .news .days span {
+        font-size: 13px;
+    }
+    .content .cards .card .body-card-five .news .text {
+        width: 100%;
+    }
+    .content .cards .card .body-card-five .news .days {
+        width: 100%;
+        justify-content: center;
+    }
+    .mr-left-30 {
+        margin-left: 10px;
+    }
+}
+.content .cards .card .body-card-six {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.content .cards .card .body-card-six .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.content .cards .card .body-card-six .task .task-text h4 {
+    margin: 5px 0px;
+}
+.content .cards .card .body-card-six .task .task-text span {
+    opacity: 0.7;
+}
+.content .cards .card .body-card-six .task .text-deco-in h4 {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.content .cards .card .body-card-six .task .text-deco-in span {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+.content .cards .card .body-card-six .task .task-icon i:hover {
+    color: var(--red-color);
+    cursor: pointer;
+}
 /* End Titles */
