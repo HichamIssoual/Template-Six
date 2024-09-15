@@ -109,7 +109,7 @@ a {
 }
 /* Start Head Of Dashboard */
 .content {
-    width: calc(100% - 210px );
+    width: calc(100% - 200px );
     background-color: #f1f5f9;
 }
 .content .head {
@@ -211,5 +211,232 @@ a {
     bottom: -20px;
     background-color: black;
     left: 0;
+}
+.content .cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.content .cards .card {
+    background-color: white;
+    width: calc((100% - 90px) / 2);
+    border-radius: 10px;
+}
+@media (min-width:0px) and (max-width:1200px){
+    .content .cards .card {
+        width: 100%;
+    }
+}
+.content .cards .card .header {
+    padding: 5px 15px 50px;
+    background-color: #eeeeeeee;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+}
+.content .cards .card .header h2 {
+    margin-bottom: 10px;
+}
+.content .cards .card .header span {
+    opacity: 0.7;
+}
+.content .cards .card .header img {
+    width: 50px;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.dashboard .content .cards .card .body {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #eeeeeeee;
+    border-bottom: 0.5px solid #eeeeeeee;
+}
+.dashboard .content .cards .card .body div {
+    text-align: center;
+    font-size: 13px;
+}
+.dashboard .content .cards .card .body div p:nth-child(1) {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+.dashboard .content .cards .card .body div p:nth-child(2) {
+    opacity: 0.7;
+}
+.dashboard .content .cards .card .btn {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.dashboard .content .cards .card .btn a {
+    margin-right: 10px;
+    background-color: var(--blue-color);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+.content .cards .card .header-card-two {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+
+}
+.content .cards .card .header-card-two h2 {
+    margin-bottom : 0px;
+}
+.content .cards .card .header-card-two input {
+    border: none;
+    background-color: #eeeeeeee;
+    border-radius: 10px;
+    padding: 10px;
+}
+.content .cards .card .body-card-two {
+    padding-left: 20px;
+}
+.content .cards .card .body-card-two input {
+    width: calc(100% - 15px);
+    background-color: #eeeeeeee;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 150px;
+    border: none;
+}
+.content .cards .card .body-card-three .targets {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content .cards .card .body-card-three .targets .logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .cards .card .body-card-three .targets .dollar {
+    background-color: #0077ff67;
+    color: var(--blue-alt-color);
+}
+.content .cards .card .body-card-three .targets .texts {
+    width: calc(100% - 90px);
+}
+.content .cards .card .body-card-three .targets .texts p {
+    opacity: 0.6;
+}
+.content .cards .card .body-card-three .targets .texts .progress {
+    width: 100%;
+    height: 4px;
+    background-color: #0077ff67;
+    margin-top: 10px;
+}
+.content .cards .card .body-card-three .targets .texts .progress .money {
+    width: 85%;
+    height: 4px;
+    background-color: var(--blue-alt-color);
+    position: relative;
+}
+.content .cards .card .body-card-three .targets .texts .progress .money::before {
+    content: '';
+    position: absolute;
+    right: -2.5px;
+    top: -11px;;
+    border: 10px solid transparent;
+    border-top: 10px solid var(--blue-alt-color);
+}
+.content .cards .card .body-card-three .targets .texts .progress .money::after {
+    content: '85%';
+    position: absolute;
+    right: -10px;
+    top: -30px;
+    background-color: var(--blue-alt-color);
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.content .cards .card .body-card-three .targets .code {
+    color: var(--orange-color);
+    background-color: #f1c06a8f;
+}
+.content .cards .card .body-card-three .targets .texts .prog-projects {
+    background-color: #f1c06a8f;
+}
+.content .cards .card .body-card-three .targets .texts .prog-projects .projects {
+    width: 55%;
+    height: 4px;
+    background-color: var(--orange-color);
+}
+.content .cards .card .body-card-three .targets .texts .prog-projects .projects::before {
+    border-top: 10px solid var(--orange-color);
+}
+.content .cards .card .body-card-three .targets .texts .prog-projects .projects::after {
+    content: '55%';
+    background-color: var(--orange-color);
+}
+/* ================================================= */
+.content .cards .card .body-card-three .targets .team {
+    color: var(--green-color);
+    background-color: #22c55e65;
+}
+.content .cards .card .body-card-three .targets .texts .prog-team {
+    background-color: #22c55e65;
+}
+.content .cards .card .body-card-three .targets .texts .prog-team .team {
+    width: 75%;
+    height: 4px;
+    background-color: var(--green-color);
+}
+.content .cards .card .body-card-three .targets .texts .prog-team .team::before {
+    border-top: 10px solid var(--green-color);
+}
+.content .cards .card .body-card-three .targets .texts .prog-team .team::after {
+    content: '75%';
+    background-color: var(--green-color);
+}
+/* =============================================== */
+.content .cards .card .body-card-four .tickets {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+
+}
+.content .cards .card .body-card-four .tickets .ticket {
+    width: calc((100% - 45px) / 2);
+    text-align: center;
+    padding: 5px;
+    border: 1px solid var(--grey-color);
+    border-radius: 10px;
+}
+.content .cards .card .body-card-four .tickets .ticket i {
+    font-size: 25px;
+}
+.content .cards .card .body-card-four .tickets .ticket p {
+    opacity: 0.6;
+}
+.content .cards .card .body-card-four .tickets .ticket .icon-orange {
+    color: var(--orange-color);
+}
+.content .cards .card .body-card-four .tickets .ticket .icon-blue {
+    color: var(--blue-color);
+}
+.content .cards .card .body-card-four .tickets .ticket .icon-green {
+    color: var(--green-color);
+}
+.content .cards .card .body-card-four .tickets .ticket .icon-red {
+    color: var(--red-color);
 }
 /* End Titles */
