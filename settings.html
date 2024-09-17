@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/settings.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
     <div class="dashboard">
         <div class="sidebar">
             <div class="logo">
-                <h3>Elzero</h3>
+                <h3>Issoual</h3>
             </div>
             <div class="links">
                 <a href="index.html">
@@ -64,6 +65,164 @@
             </div>
             <div class="title mr-left-30">
                 <h1>Settings</h1>
+            </div>
+            <div class="settings-cards mr-left-30 cards">
+                <div class="card settings-card">
+                    <div class="pd-left-20 bg-white">
+                        <h2>Site Control</h2>
+                        <p class="opa-5">Control The Website If There Is Maintenance</p>
+                    </div>
+                    <div class="body-settings-card-one">
+                        <div class="website-control">
+                            <div class="pd-left-20 bg-white pd-right-20 header-settings">
+                                <p class="settings-head-website-control">Website Control</p>
+                                <p class="opa-5">Open/Close Website And Type The Reason</p>
+                            </div>
+                            <div class="compenents-one pd-right-20">
+                                <label>
+                                    <input class="toggle-checked" type="checkbox" checked>
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pd-left-20 setting-input pd-right-20">
+                            <input type="text" placeholder="Close Message Content">
+                        </div>
+                    </div>
+                </div>
+                <!-- Start General Info -->
+                <div class="card settings-card">
+                    <div class="pd-left-20 bg-white">
+                        <h2>General Info</h2>
+                        <p class="opa-5">General Information About Your Account</p>
+                    </div>
+                    <div class="body-settings-card-two">
+                        <div class="settings-general-info pd-left-20 pd-right-20">
+                            <div>
+                                <label for="fname">First Name</label>
+                                <br>
+                                <input type="text" name="" id="fname" placeholder="First Name">
+                            </div>
+                            <div>
+                                <label for="lname">Last Name</label>
+                                <br>
+                                <input type="text" name="" id="lname" placeholder="Last Name">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <div>
+                                    <input type="email" name="" id="email" disabled value="o@gmail.com">
+                                    <button>Change</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End General Info -->
+                <!-- Start Securty Info -->
+                <div class="card settings-card">
+                    <div class="pd-left-20 bg-white">
+                        <h2>Security Info</h2>
+                        <p class="opa-5">Security Information About Your Account</p>
+                    </div>
+                    <div class="body-settings-card-three">
+                        <div class="settings-security-info pd-left-20 pd-right-20">
+                            <div class="security-info">
+                                <div>
+                                    <p>Password</p>
+                                    <p class="opa-5">Last Change On 25/10/2021</p>
+                                </div>
+                                <div>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                            <div class="security-info">
+                                <div>
+                                    <p>Two-Factor Authentication</p>
+                                    <p class="opa-5">Enable/Disable The Feature</p>
+                                </div>
+                                <div class="compenents-one">
+                                    <label>
+                                        <input class="toggle-checked" type="checkbox" checked>
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="security-info">
+                                <div>
+                                    <p>Devices</p>
+                                    <p class="opa-5">Check The Login Devices List</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="devices">Devices</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Securty Info -->
+                <!-- Start Social Info -->
+                <div class="card settings-card">
+                    <div class="pd-left-20 bg-white">
+                        <h2>Social Info</h2>
+                        <p class="opa-5">Social Media Information</p>
+                    </div>
+                    <div class="body-settings-card-four">
+                        <div class="settings-social-info pd-left-20 pd-right-20">
+                            <div class="sett-social-info">
+                                <input type="text" name="" id="" placeholder="X UserName">
+                                <i class="fa-brands fa-x-twitter fa-fw"></i>
+                            </div>
+                            <div class="sett-social-info">
+                                <input type="text" name="" id="" placeholder="Facebook UserName">
+                                <i class="fa-brands fa-facebook-f fa-fw"></i>
+                            </div>
+                            <div class="sett-social-info">
+                                <input type="text" name="" id="" placeholder="Linkedin UserName">
+                                <i class="fa-brands fa-linkedin fa-fw"></i>
+                            </div>
+                            <div class="sett-social-info">
+                                <input type="text" name="" id="" placeholder="Youtube UserName">
+                                <i class="fa-brands fa-youtube fa-fw"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Social Info -->
+                <!-- Start Wedgits Control -->
+                <div class="card settings-card">
+                    <div class="pd-left-20 bg-white">
+                        <h2>Widgets Control</h2>
+                        <p class="opa-5">Show/Hide Widgets</p>
+                    </div>
+                    <div class="body-settings-card-Five pd-left-20 pd-right-20">
+                        <div>
+                            <input type="checkbox" name="" id="inp-chek">
+                            <label for="inp-chek">Quick Draft</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="inp-chek">
+                            <label for="inp-chek">Yearly Targets</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="inp-chek">
+                            <label for="inp-chek">Tickets Statistics</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="inp-chek">
+                            <label for="inp-chek">Latest News</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="inp-chek">
+                            <label for="inp-chek">Latest Tasks</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="inp-chek">
+                            <label for="inp-chek">Top Search Items</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Wedgits Control -->
             </div>
         </div>
     </div>

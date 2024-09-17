@@ -21,3 +21,131 @@ body {
 a {
     text-decoration: none;
 }
+.bg-white {
+    background-color: white !important;
+}
+/* Start Website Control */
+.website-control {
+    display: flex;
+    justify-content: space-between;
+}
+.body-settings-card-one .setting-input input {
+    padding: 5px 0px 100px 5px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.body-settings-card-one .setting-input input::placeholder {
+    font-size: 14px;
+    font-family: monospace;
+}
+.website-control .header-settings .settings-head-website-control {
+    font-weight: 600;
+    font-size: 20px;
+}
+.body-settings-card-two .settings-general-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.body-settings-card-two .settings-general-info div label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.body-settings-card-two .settings-general-info div input {
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.body-settings-card-two .settings-general-info div input:disabled {
+    width: 60%;
+    cursor: not-allowed;
+}
+.body-settings-card-two .settings-general-info div > div {
+    display: flex;
+    justify-content: space-between;
+}
+.body-settings-card-two .settings-general-info div > div button {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--blue-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* End Website Control */
+/* Start Security Info */
+.body-settings-card-three .settings-security-info .security-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body-settings-card-three .settings-security-info .security-info > div > p {
+    margin: 10px 0;
+}
+
+.body-settings-card-three .settings-security-info .security-info > div > a {
+    background-color: var(--blue-color);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+.body-settings-card-three .settings-security-info .security-info > div > .devices {
+    background-color: #ccc;
+    color: black;
+}
+/* End Security Info */
+/* Start Social Info */
+.body-settings-card-four .sett-social-info {
+    width: 100%;border: 1px solid #ddd;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+.body-settings-card-four .sett-social-info input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    background-color: transparent;
+    margin-left: 20px;
+}
+.body-settings-card-four .sett-social-info input::placeholder {
+    font-size: 14px;
+}
+.body-settings-card-four .sett-social-info i {
+    color: var(--grey-color);
+    position: absolute;
+    left: calc(20px - 14px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.body-settings-card-four .sett-social-info input:focus + i {
+    color: initial;
+}
+/* End Social Info */
+/* Start Wedgit control */
+.body-settings-card-Five > div {
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.body-settings-card-Five > div > input {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    accent-color: var(--blue-color);
+}
+.body-settings-card-Five > div > input:checked {
+    background-color: var(--blue-color);
+    color: white;
+}
+/* End Wedgit control */

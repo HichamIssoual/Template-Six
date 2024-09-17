@@ -13,6 +13,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
+    caret-color: var(--blue-color);
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -563,6 +564,7 @@ a {
 }
 .content .cards .card .body-card-eight .l-uploads .lp-element  .lp-img-and-texts div > img  {
     width: 50px;
+    padding-top: 10px;
 }
 .content .cards .card .body-card-eight .l-uploads .lp-element .lp-img-and-texts .lp-text p {
     margin: 5px 0px;
@@ -818,14 +820,19 @@ a {
     padding: 10px;
 }
 .content .cards .card-13 .body-card-13 .projects-table-projects table tbody tr {
+    border: 1px solid #d4d4d4;
     transition: 0.3s;
 }
 .content .cards .card-13 .body-card-13 .projects-table-projects table tbody tr:hover {
     background-color: #d4d4d49f;
 }
 .content .cards .card-13 .body-card-13 .projects-table-projects table tbody tr td {
-    border: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
     font-size: 16px;
+}
+.content .cards .card-13 .body-card-13 .projects-table-projects table tbody tr .p-row-imgs span{
+    width: 155px;
+    display: block;
 }
 .content .cards .card-13 .body-card-13 .projects-table-projects table tbody tr td img {
     width: 30px;
@@ -849,4 +856,57 @@ a {
 .content .cards .card-13 .body-card-13 .projects-table-projects table tbody tr .table-red span {
     background-color: var(--red-color);
 }
+.card {
+    padding-bottom: 10px;
+}
 /* End Table Projects */
+/* Component  */
+.compenents-one .toggle-checked {
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.compenents-one label .toggle-switch {
+    background-color: #ccc;
+    width: 80px;
+    border-radius: 25px;
+    height: 34px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.compenents-one .toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+.pd-left-20 {
+    padding-left: 20px;
+}
+.pd-right-20 {
+    padding-right: 20px;
+}
+.compenents-one .toggle-checked:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+.compenents-one .toggle-checked:checked + .toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+}
+.opa-5 {
+    opacity: 0.5;
+}
