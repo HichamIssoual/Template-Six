@@ -21,3 +21,81 @@ body {
 a {
     text-decoration: none;
 }
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+    justify-content: space-between;
+}
+.projects .p-card {
+    padding: 15px;
+    width: calc((100% - 20px) / 2);
+    border-radius: 10px;
+    position: relative;
+}
+@media (min-width:0px) and (max-width:768px) {
+    .projects .p-card {
+        width: 100%;
+    }
+}
+.fw-700 {
+    font-weight: 700;
+}
+.projects .p-card p {
+    margin: 5px 0px;
+}
+
+.projects .p-card .proj-img img {
+    margin: 60px 0px 20px;
+    position: relative;
+}
+.projects .p-card .proj-img .two {
+    left: -20px;
+}
+.projects .p-card .proj-img img:hover {
+    z-index: 5263276186;
+}
+.projects .p-card .proj-img .three {
+    left: -40px;
+}
+.projects .p-card .proj-img .four {
+    left: -60px;
+}
+.p-card .proj-tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px 10px;
+    border-block: 1px solid #dadada;
+}
+.p-card .proj-tags span {
+    padding: 10px 5px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.p-card .proje-prog {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.p-card .proje-prog .one {
+    width: 40%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 25px;
+}
+.p-card .proje-prog .one div {
+    background-color: var(--red-color);
+    width: 50%;
+    height: 100%;
+    border-radius: 25px;
+}
+.p-card .proj-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

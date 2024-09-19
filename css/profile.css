@@ -21,3 +21,185 @@ body {
 a {
     text-decoration: none;
 }
+/* Start Profile info */
+.profile .profile-info {
+    padding: 0px 10px 10px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+}
+.profile .profile-info .gene-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-right: 20px;
+}
+.profile .profile-info .gene-info img {
+    margin-top: 5px;
+}
+.profile .profile-info .gene-info h2 {
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.profile .profile-info .gene-info p {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.profile .profile-info .gene-info div {
+    margin-bottom: 20px;
+}
+.profile .profile-info .gene-info div i {
+    color: var(--orange-color);
+}
+.profile .profile-info .gene-info::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    right: 0;
+    background-color: #ccc;
+}
+.profile .profile-info .impo-info {
+    width: 80%;
+}
+.profile .profile-info .impo-info .main-impo-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    transition-duration: 0.3s;
+}
+.profile .profile-info .impo-info .main-impo-info:hover {
+    background-color: #e2e2e259;
+}
+@media (min-width:0px) and (max-width:992px) {
+    .profile .profile-info .impo-info .main-impo-info {
+        flex-direction: column;
+    }
+    .profile .profile-info {
+        flex-direction: column;
+    }
+    .profile .profile-info .gene-info::after {
+        display: none;
+    }
+    .profile .profile-info .impo-info {
+        width: 100%;
+    }
+}
+.profile .profile-info .impo-info .main-info-active{
+    border: none;
+}
+.profile-toggle-switch label .toggle-switch {
+    width: 84px;
+    height: 20px;
+}
+.profile-toggle-switch .toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+.compenents-one .toggle-checked:checked + .toggle-switch::before {
+    left: 65px;
+}
+.profile .profile-info .impo-info div .pro-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+.profile .profile-info .impo-info div .pro-information h4 {
+    margin: 0px;
+}
+.profile .profile-info .impo-info div .pro-information p {
+    margin: 10px 0px;
+}
+/* End Profile info */
+/* Start My Skill */
+.profile-skill-activites {
+    display: flex;
+    gap: 20px;
+}
+.profile-skill-activites .profi-skill {
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.profile-skill-activites .profi-skill .pr-skill {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-skill-activites .profi-skill .pr-skill div {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.profile-skill-activites .profi-skill .pr-skill div span {
+    padding: 10px 5px;
+    background-color: #eeeeeeee;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.profile-skill-activites .profi-activites {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.profile-skill-activites .profi-activites .profi-activite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.profile-skill-activites .profi-activites .profi-activite .profi-spec {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-skill-activites .profi-activites .profi-activite .profi-spec p {
+    margin: 5px 0;
+}
+@media (min-width:0px) and (max-width:768px) {
+    .profile-skill-activites {
+        flex-wrap: wrap;
+    }
+    .profile-skill-activites .profi-skill {
+        width: 100%;
+    }
+    .profile-skill-activites .profi-activites {
+        width: 100%;
+    }
+    .profile-skill-activites .profi-activites .profi-activite {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profile-skill-activites .profi-activites .profi-activite .profi-spec {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* End My Skill */

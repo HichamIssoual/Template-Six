@@ -910,3 +910,29 @@ a {
 .opa-5 {
     opacity: 0.5;
 }
+.mr-right-20 {
+    margin-right: 20px;
+}
+.mr-top-20 {
+    margin-top: 20px;
+}
+.pd-bottom-20 {
+    padding-bottom: 20px;
+}
+.c-grey {
+    color: var(--grey-color);
+}
+.bg-white {
+    background-color: white;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.border-none {
+    border: none !important;
+}
+@media (min-width:0px) and (max-width:768px) {
+    .mr-right-20 {
+        margin-right: 5px;
+    }
+}

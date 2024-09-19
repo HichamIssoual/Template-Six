@@ -131,21 +131,145 @@ a {
 }
 /* End Social Info */
 /* Start Wedgit control */
-.body-settings-card-Five > div {
-    margin-bottom: 10px;
-    font-size: 20px;
+.body-settings-card-Five div {
+    margin-bottom: 15px;
+}
+.body-settings-card-Five div input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.body-settings-card-Five div label {
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+}
+.body-settings-card-Five div label::before,
+.body-settings-card-Five div label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.body-settings-card-Five div label::before {
+    content: "";
+    width: 17.5px;
+    height: 17.5px;
+    border: 1px solid var(--grey-color);
+}
+.body-settings-card-Five div label:hover::before {
+    background-color: #eee;
+}
+.body-settings-card-Five div label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "";
+    font-weight: 900;
+    background-color: transparent;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    color: black;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    transition: 0.1s;
+    transform: translateY(-50%) rotate(180deg);
 }
-.body-settings-card-Five > div > input {
-    width: 25px;
-    height: 25px;
-    border: 1px solid #ccc;
-    accent-color: var(--blue-color);
-}
-.body-settings-card-Five > div > input:checked {
+.body-settings-card-Five div input:checked + label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;;
     background-color: var(--blue-color);
     color: white;
+    transform: translateY(-50%) rotate(0deg);
+    z-index: 0;
 }
 /* End Wedgit control */
+/* Start Backup Manager */
+.body-settings-card-six .backup-time {
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+.body-settings-card-six .backup-time div {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.body-settings-card-six .backup-time div input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.body-settings-card-six .backup-time div label {
+    padding-left: 40px;
+    position: relative;
+}
+.body-settings-card-six .backup-time div label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.body-settings-card-six .backup-time div label::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    left: 5px;
+    transition: 0.3s;
+    transform: translateY(-50%);
+}
+.body-settings-card-six .backup-time div input:checked + label::after {
+    background-color: var(--blue-color);
+}
+.body-settings-card-six .backup-time div input:checked + label::before {
+    border-color: var(--blue-color);
+}
+.body-settings-card-six .backup-plans {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.body-settings-card-six .backup-plans .sett-plan {
+    width: calc((100% - 40px) / 3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (min-width:0px) and (max-width:768px) {
+    .body-settings-card-six .backup-plans .sett-plan {
+        width: 100%;
+    }
+}
+.body-settings-card-six .backup-plans .sett-plan label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--grey-color);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 5px;
+    transition: 0.2s;
+}
+.body-settings-card-six .backup-plans .sett-plan input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.body-settings-card-six .backup-plans .sett-plan input:checked + label {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+/* End Backup Manager */
