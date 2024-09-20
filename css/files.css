@@ -21,3 +21,161 @@ body {
 a {
     text-decoration: none;
 }
+.files {
+    display: flex;
+    justify-content: space-between;
+}
+.files .file {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px 0px;
+    align-items: center;
+}
+.files .file-statics {
+    width: calc(25% - 15px);
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+.files .file-statics h2 {
+    margin-top: 0px;
+}
+.files .file .fl {
+    padding: 15px;
+    width: calc((100% - 30px) / 3);
+    border-radius: 10px;
+    position: relative;
+}
+.files .file .fl .fl-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.files .file .fl .owner {
+    padding-bottom: 15px;
+    display: inline-block;
+}
+@media (min-width:814px) and (max-width:1075px) {
+    .files .file .fl {
+        width: calc((100% - 30px) / 2);
+    }
+    .files .file {
+        width: 60%;
+    }
+    .files .file-statics {
+        width: calc(40% - 15px);
+    }
+}
+@media (min-width:769px) and (max-width:813px) {
+    .files .file .fl {
+        width: calc((100% - 30px) / 1);
+    }
+    .files .file {
+        width: 50%;
+    }
+    .files .file-statics {
+        width: calc(50% - 15px);
+    }
+}
+@media (min-width:0px) and (max-width:768px) {
+    .files .file {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+    .files .file .fl {
+        width: 186px;
+    }
+    .files .file-statics {
+        width: 100%;
+    }
+    .files {
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .files .file-statics h2 {
+        text-align: center;
+    }
+}
+@media (min-width:0px) and (max-width:490px) {
+    .files .file .fl {
+        width: 100%;
+    }
+}
+.files .file .fl .size-time {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.files .file .fl  .download {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+} 
+.files .file .fl:hover > .fl-imgs > img {
+    transition: 0.3s;
+    transform: rotate(10deg);
+}
+.file-statics .f-statics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.file-statics .f-statics .fs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.file-statics .f-statics .fs div > p {
+    margin: 5px 0px 0px;
+}
+.file-statics .f-statics .fs i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0077ff69;
+    border-radius: 10px;
+    color: var(--blue-color);
+    font-size: 15px;
+}
+.file-statics .upload-files {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    color: white;
+}
+.file-statics .upload-files div {
+    background-color: var(--blue-color);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.file-statics .upload-files div i {
+    margin-right: 10px;
+}
+.file-statics .upload-files div:hover {
+    background-color: var(--blue-alt-color);
+}
+.file-statics .upload-files div:hover > i {
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes up {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}

@@ -66,6 +66,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: sticky;
+    top: 0;
 }
 .dashboard .sidebar .links a {
     font-size: 14px;

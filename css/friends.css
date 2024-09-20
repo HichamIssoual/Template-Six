@@ -21,3 +21,109 @@ body {
 a {
     text-decoration: none;
 }
+.friends  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+}
+.friends .friend {
+    width: calc((100% - 40px) / 3);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.friends .friend .f-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.friends .friend .f-info h4 {
+    margin: 8px 0px;
+}
+.friends .friend .descri-friend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.friends .friend .descri-friend div .statics {
+    margin-bottom: 10px;
+}
+.friends .friend .descri-friend div .statics i {
+    margin-right: 10px;
+}
+.friends .friend .descri-friend div .vip {
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0.2;
+    color: var(--red-color);
+}
+.friends .friend .f-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+} 
+.friends .friend .f-footer div {
+    display: flex;
+    align-items: center;
+}
+.friends .friend .f-footer div ~ div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.friends .friend .f-footer div span {
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.friends .friend .f-contact-icons {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.friends .friend .f-contact-icons i {
+    background-color: #eee;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.friends .friend .f-contact-icons i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+@media (min-width:812px) and (max-width:1060px) {
+        .friends .friend {
+            width: calc((100% - 40px) / 2);
+        }
+        .friends {
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+@media (min-width:0px) and (max-width:811px) {
+        .friends .friend {
+            width: 100%;
+        }
+        .friends {
+            gap: 20px;
+            justify-content: center;
+        }
+        .friends .friend .f-footer div span {
+            padding: 5px;
+        }
+    }
